@@ -7,7 +7,7 @@ if f"twitter.com/" in link:
     print("Twitter Valid")
     check = 1
     m = (re.search(r"twitter.com\/[\w-.]{3,}", link)).group(0)
-    print(f"Android : intent://{m}#Intent;package=com.google.android.youtube;scheme=https;end")
+    print(f"Android : intent://{m}#Intent;package=com.twitter.android;scheme=https;end")
     print(f"iOS : twitter://user?screen_name={m[12:]}")
     print(f"Web : {m}")
     
@@ -16,12 +16,12 @@ if f"instagram.com/" in link:
     check = 2
     if f"/p/" in link:
         m = (re.search(r"instagram.com\/p\/[\w\-\.]{3,}", link)).group(0)
-        print(f"Android : intent://{m}#Intent;package=com.google.android.youtube;scheme=https;end")
+        print(f"Android : intent://{m}#Intent;package=com.instagram.android;scheme=https;end")
         print(f"iOS : instagram://media?id={m[16:]}")
         print(f"Web : {m}")
     else :
         m = (re.search(r"instagram.com\/[\w\-\.]{3,}", link)).group(0)
-        print(f"Android : intent://{m}#Intent;package=com.google.android.youtube;scheme=https;end")
+        print(f"Android : intent://{m}#Intent;package=com.instagram.android;scheme=https;end")
         print(f"iOS : instagram://user?username={m[14:]}")
         print(f"Web : {m}")
 
