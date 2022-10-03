@@ -3,6 +3,7 @@ import re
 link = input()
 check = 0
 
+
 if f"twitter.com/" in link:
     print("Twitter Valid")
     check = 1
