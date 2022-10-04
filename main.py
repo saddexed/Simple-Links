@@ -1,9 +1,9 @@
 import re
 import sites
 #Data
-check = int
+check = str
 link = input("Enter link : ")
-webs = ["twitter.com","instagram.com","youtube.com"]
+webs = ["twitter.com","instagram.com","youtube.com","open.spotify.com","snapchat.com","messenger.com"]
 #Checking the Service
 for i in webs:
     if i in link:
